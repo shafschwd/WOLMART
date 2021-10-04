@@ -32,11 +32,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   --header-right-text: #333333;
 }
 
+/*===============================
+    header left css start
+================================*/
 .header_left {
   background: var(--header-left-bg);
 }
 
 .header_left__p {
-  color: aqua;
+  color: var(--header-left-text);
 }
+
+/*===============================
+    header left css start
+================================*/
 /*# sourceMappingURL=style.css.map */
