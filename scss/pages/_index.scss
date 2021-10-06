@@ -1,16 +1,1 @@
-/*===============================
-    header left css start
-================================*/
-
-.header_left{
-    background: var(--header-left-bg);
-
-
-    &__p{
-        color: var(--header-left-text);
-    }
-}
-
-/*===============================
-    header left css start
-================================*/
+@import '../layout/index/header';

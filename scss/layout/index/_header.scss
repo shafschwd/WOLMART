@@ -1,0 +1,104 @@
+@import "../../util/functions";
+@import "../../util/mixins";
+@import "../../base/color";
+@import "../../base/fonts";
+
+/*=============================
+        header start
+=============================*/
+#header {
+	height: 45px;
+	background: $header-left-bg;
+
+	.header-left {
+		background: $header-left-bg;
+
+		&__p {
+			color: $header-left-text;
+			font-size: rem(11);
+			padding: 14px 0;
+			font-family: $pop;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+
+	.header-right{
+
+		.dropdown{
+
+			&__head{
+				position: relative;
+				transition: all linear .3s;
+
+				&:hover{
+
+					.dropdown__text{
+						color:$hover;
+					}
+
+					.dropdown__box{
+						opacity: 100%;
+					}
+
+				}
+			}
+
+			&__text{
+				color: $header-right-text;
+				font-size: rem(11);
+				padding: 14px 0;
+				font-weight: 400;
+				text-transform: uppercase;
+				margin: 0 20px;
+
+				i{
+					margin-left: rem(5);
+				}
+			}
+
+			&__box{
+				position: absolute;
+				left: 0;
+				top: 100%;
+				box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.267);
+				text-align: center;
+				opacity: 0;
+				width: 50px;
+				position: relative;
+				transition: all linear 0.3s;
+			
+				&::before {
+				left: 50%;
+				top: -10px;
+				transform: translateX(-50%);
+				position: absolute;
+				content: "";
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid $dropdown-bg;
+				}
+			}
+
+			&__link{
+				color: $header-right-text;
+				font-size: rem(11);
+				padding: 10px 0;
+				font-weight: 400;
+				text-transform: uppercase;
+				transition: all linear 0.3s;
+
+				&:hover{
+					color: $hover;
+				}
+
+				img {
+				margin-right: 6px;
+				}
+			}
+		}
+	}
+}
+/*=============================
+        header start
+=============================*/

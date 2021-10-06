@@ -24,26 +24,99 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 /*==========================
 		com css end
 ============================*/
-:root {
-  --hover: #336699;
-  --header-left-bg: #f5f6f8;
-  --header-left-text: #333333;
-  --header-right-bg: #f5f6f8;
-  --header-right-text: #333333;
+/*=============================
+        header start
+=============================*/
+#header {
+  height: 45px;
+  background: #f5f6f8;
 }
 
-/*===============================
-    header left css start
-================================*/
-.header_left {
-  background: var(--header-left-bg);
+#header .header-left {
+  background: #f5f6f8;
 }
 
-.header_left__p {
-  color: var(--header-left-text);
+#header .header-left__p {
+  color: #333333;
+  font-size: 0.6875rem;
+  padding: 14px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-/*===============================
-    header left css start
-================================*/
+#header .header-right .dropdown__head {
+  position: relative;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#header .header-right .dropdown__head:hover .dropdown__text {
+  color: #336699;
+}
+
+#header .header-right .dropdown__head:hover .dropdown__box {
+  opacity: 100%;
+}
+
+#header .header-right .dropdown__text {
+  color: #333333;
+  font-size: 0.6875rem;
+  padding: 14px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+#header .header-right .dropdown__text i {
+  margin-left: 0.3125rem;
+}
+
+#header .header-right .dropdown__box {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.267);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.267);
+  text-align: center;
+  opacity: 0;
+  width: 50px;
+  position: relative;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#header .header-right .dropdown__box::before {
+  left: 50%;
+  top: -10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+}
+
+#header .header-right .dropdown__link {
+  color: #333333;
+  font-size: 0.6875rem;
+  padding: 10px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#header .header-right .dropdown__link:hover {
+  color: #336699;
+}
+
+#header .header-right .dropdown__link img {
+  margin-right: 6px;
+}
+
+/*=============================
+        header start
+=============================*/
 /*# sourceMappingURL=style.css.map */
