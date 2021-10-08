@@ -16,6 +16,7 @@
 		&__p {
 			color: $header-left-text;
 			font-size: rem(11);
+			font-family: $pop;
 			padding: 14px 0;
 			font-family: $pop;
 			font-weight: 400;
@@ -28,8 +29,7 @@
 		.dropdown{
 
 			&__head{
-				position: relative;
-				transition: all linear .3s;
+			position: relative;
 
 				&:hover{
 
@@ -50,10 +50,9 @@
 				padding: 14px 0;
 				font-weight: 400;
 				text-transform: uppercase;
-				margin: 0 20px;
 
 				i{
-					margin-left: rem(5);
+					margin-left: 5px;
 				}
 			}
 
@@ -80,10 +79,13 @@
 				}
 			}
 
+			&__item{
+				margin: 4px 4px;
+			}
+
 			&__link{
 				color: $header-right-text;
 				font-size: rem(11);
-				padding: 10px 0;
 				font-weight: 400;
 				text-transform: uppercase;
 				transition: all linear 0.3s;
@@ -91,9 +93,53 @@
 				&:hover{
 					color: $hover;
 				}
+			}
+		}
 
-				img {
-				margin-right: 6px;
+		.header-menu{
+
+			&__link{
+				color: $header-right-text;
+				font-family: $pop;
+				font-size: rem(11);
+				padding: 14px 0;
+				font-weight: 400;
+				text-transform: capitalize;
+				margin-left: 20px;
+				transition: all linear .3s;
+
+				&:hover{
+					color: $hover;
+				}
+			}
+		}
+
+		.sign-reg{
+
+			&__item{
+				margin-left: 20px;
+
+				&:nth-child(2){
+					margin-left: 0;
+				}
+
+				i{
+					margin-right: 6px;
+				}
+			}
+
+
+			&__link{
+				color: $header-right-text;
+				font-family: $pop;
+				font-size: rem(11);
+				padding: 14px 0;
+				font-weight: 400;
+				text-transform: capitalize;
+				transition: all linear .3s;
+
+				&:hover{
+					color: $hover;
 				}
 			}
 		}

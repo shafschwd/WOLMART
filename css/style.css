@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #header .header-left__p {
   color: #333333;
   font-size: 0.6875rem;
+  font-family: "Poppins", sans-serif;
   padding: 14px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -47,8 +48,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 
 #header .header-right .dropdown__head {
   position: relative;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
 }
 
 #header .header-right .dropdown__head:hover .dropdown__text {
@@ -65,11 +64,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   padding: 14px 0;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 20px;
 }
 
 #header .header-right .dropdown__text i {
-  margin-left: 0.3125rem;
+  margin-left: 5px;
 }
 
 #header .header-right .dropdown__box {
@@ -98,10 +96,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   border-bottom: 10px solid #ffffff;
 }
 
+#header .header-right .dropdown__item {
+  margin: 4px 4px;
+}
+
 #header .header-right .dropdown__link {
   color: #333333;
   font-size: 0.6875rem;
-  padding: 10px 0;
   font-weight: 400;
   text-transform: uppercase;
   -webkit-transition: all linear 0.3s;
@@ -112,8 +113,47 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   color: #336699;
 }
 
-#header .header-right .dropdown__link img {
+#header .header-right .header-menu__link {
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6875rem;
+  padding: 14px 0;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-left: 20px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#header .header-right .header-menu__link:hover {
+  color: #336699;
+}
+
+#header .header-right .sign-reg__item {
+  margin-left: 20px;
+}
+
+#header .header-right .sign-reg__item:nth-child(2) {
+  margin-left: 0;
+}
+
+#header .header-right .sign-reg__item i {
   margin-right: 6px;
+}
+
+#header .header-right .sign-reg__link {
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6875rem;
+  padding: 14px 0;
+  font-weight: 400;
+  text-transform: capitalize;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#header .header-right .sign-reg__link:hover {
+  color: #336699;
 }
 
 /*=============================
