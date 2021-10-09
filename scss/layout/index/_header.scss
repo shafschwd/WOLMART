@@ -24,39 +24,36 @@
 		}
 	}
 
-	.header-right{
+	.header-right {
+		.dropdown {
+			&__head {
+				position: relative;
 
-		.dropdown{
-
-			&__head{
-			position: relative;
-
-				&:hover{
-
-					.dropdown__text{
-						color:$hover;
+				&:hover {
+					.dropdown__text {
+						color: $hover;
 					}
 
-					.dropdown__box{
+					.dropdown__box {
 						opacity: 100%;
 					}
-
 				}
 			}
 
-			&__text{
+			&__text {
 				color: $header-right-text;
 				font-size: rem(11);
 				padding: 14px 0;
 				font-weight: 400;
 				text-transform: uppercase;
+				font-family: $pop;
 
-				i{
+				i {
 					margin-left: 5px;
 				}
 			}
 
-			&__box{
+			&__box {
 				position: absolute;
 				left: 0;
 				top: 100%;
@@ -66,39 +63,45 @@
 				width: 50px;
 				position: relative;
 				transition: all linear 0.3s;
-			
+
 				&::before {
-				left: 50%;
-				top: -10px;
-				transform: translateX(-50%);
-				position: absolute;
-				content: "";
-				border-left: 10px solid transparent;
-				border-right: 10px solid transparent;
-				border-bottom: 10px solid $dropdown-bg;
+					left: 50%;
+					top: -10px;
+					transform: translateX(-50%);
+					position: absolute;
+					content: "";
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-bottom: 10px solid $dropdown-bg;
 				}
 			}
 
-			&__item{
+			&__item {
 				margin: 4px 4px;
 			}
 
-			&__link{
+			&__link {
 				color: $header-right-text;
 				font-size: rem(11);
 				font-weight: 400;
 				text-transform: uppercase;
 				transition: all linear 0.3s;
 
-				&:hover{
+				&:hover {
 					color: $hover;
 				}
 			}
 		}
 
-		.header-menu{
+		.header-divider{
+			width: 1px;
+			height: 15px;
+			background: #ccc;
+			margin: 14px 0 14px 20px;
+		}
 
-			&__link{
+		.header-menu {
+			&__link {
 				color: $header-right-text;
 				font-family: $pop;
 				font-size: rem(11);
@@ -106,39 +109,37 @@
 				font-weight: 400;
 				text-transform: capitalize;
 				margin-left: 20px;
-				transition: all linear .3s;
+				transition: all linear 0.3s;
 
-				&:hover{
+				&:hover {
 					color: $hover;
 				}
 			}
 		}
 
-		.sign-reg{
-
-			&__item{
+		.sign-reg {
+			&__item {
 				margin-left: 20px;
 
-				&:nth-child(2){
+				&:nth-child(2) {
 					margin-left: 0;
 				}
 
-				i{
+				i {
 					margin-right: 6px;
 				}
 			}
 
-
-			&__link{
+			&__link {
 				color: $header-right-text;
 				font-family: $pop;
 				font-size: rem(11);
 				padding: 14px 0;
 				font-weight: 400;
 				text-transform: capitalize;
-				transition: all linear .3s;
+				transition: all linear 0.3s;
 
-				&:hover{
+				&:hover {
 					color: $hover;
 				}
 			}

@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   padding: 14px 0;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
 
 #header .header-right .dropdown__text i {
@@ -113,6 +114,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   color: #336699;
 }
 
+#header .header-right .header-divider {
+  width: 1px;
+  height: 15px;
+  background: #ccc;
+  margin: 14px 0 14px 20px;
+}
+
 #header .header-right .header-menu__link {
   color: #333333;
   font-family: "Poppins", sans-serif;
@@ -121,8 +129,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   font-weight: 400;
   text-transform: capitalize;
   margin-left: 20px;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
 }
 
 #header .header-right .header-menu__link:hover {
@@ -148,8 +156,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   padding: 14px 0;
   font-weight: 400;
   text-transform: capitalize;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
 }
 
 #header .header-right .sign-reg__link:hover {
