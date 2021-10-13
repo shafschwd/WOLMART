@@ -145,10 +145,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   margin-left: 0;
 }
 
-#header .header-right .sign-reg__item i {
-  margin-right: 6px;
-}
-
 #header .header-right .sign-reg__link {
   color: #333333;
   font-family: "Poppins", sans-serif;
@@ -158,6 +154,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   text-transform: capitalize;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
+}
+
+#header .header-right .sign-reg__link i {
+  margin-right: 6px;
+  float: left;
+  font-size: 0.9375rem;
 }
 
 #header .header-right .sign-reg__link:hover {

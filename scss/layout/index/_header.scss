@@ -124,10 +124,6 @@
 				&:nth-child(2) {
 					margin-left: 0;
 				}
-
-				i {
-					margin-right: 6px;
-				}
 			}
 
 			&__link {
@@ -138,6 +134,12 @@
 				font-weight: 400;
 				text-transform: capitalize;
 				transition: all linear 0.3s;
+
+				i{
+					margin-right: 6px;
+					float: left;
+					font-size: rem(15);
+				}
 
 				&:hover {
 					color: $hover;
