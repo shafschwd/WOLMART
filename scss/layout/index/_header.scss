@@ -28,6 +28,7 @@
 		.dropdown {
 			&__head {
 				position: relative;
+				margin: 0 6px;
 
 				&:hover {
 					.dropdown__text {
@@ -36,6 +37,7 @@
 
 					.dropdown__box {
 						opacity: 100%;
+						visibility: visible;
 					}
 				}
 			}
@@ -53,15 +55,15 @@
 				}
 			}
 
-			&__box {
+			&__box{
 				position: absolute;
 				left: 0;
 				top: 100%;
 				box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.267);
 				text-align: center;
 				opacity: 0;
+				visibility: hidden;
 				width: 50px;
-				position: relative;
 				transition: all linear 0.3s;
 
 				&::before {
