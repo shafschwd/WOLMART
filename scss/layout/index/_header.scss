@@ -38,6 +38,7 @@
 					.dropdown__box {
 						opacity: 100%;
 						visibility: visible;
+						top: 100%;
 					}
 				}
 			}
@@ -58,13 +59,15 @@
 			&__box{
 				position: absolute;
 				left: 0;
-				top: 100%;
+				top: 0;
 				box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.267);
 				text-align: center;
 				opacity: 0;
 				visibility: hidden;
 				width: 50px;
 				transition: all linear 0.3s;
+				z-index: 999;
+				background-color: #fff;
 
 				&::before {
 					left: 50%;

@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #header .header-right .dropdown__head:hover .dropdown__box {
   opacity: 100%;
   visibility: visible;
+  top: 100%;
 }
 
 #header .header-right .dropdown__text {
@@ -76,7 +77,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #header .header-right .dropdown__box {
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 0;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.267);
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.267);
   text-align: center;
@@ -85,6 +86,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   width: 50px;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
+  z-index: 999;
+  background-color: #fff;
 }
 
 #header .header-right .dropdown__box::before {
@@ -188,7 +191,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   border: 2px solid #336699;
   border-radius: 3px;
   height: 47px;
-  width: 482px;
+  width: 460px;
   position: relative;
 }
 
@@ -211,7 +214,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   position: absolute;
   top: 20px;
   right: 0;
-  content: '';
+  content: "";
   height: 35px;
   width: 2px;
   background: black;
@@ -243,7 +246,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 
 #logo .logo-end .logo-call::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 41px;
   width: 1px;
   background: #e5e5e5;
@@ -255,8 +258,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   color: #333333;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
   cursor: pointer;
 }
 
@@ -290,15 +293,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 }
 
 #logo .logo-end .logo-call a i {
-  left: 0;
   top: 0;
+  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
   font-size: 1.875rem;
   color: #333333;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
 }
 
 #logo .logo-end .logo-call a h2 {
@@ -306,8 +309,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #333333;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
 }
 
 #logo .logo-end .logo-item {
@@ -325,8 +328,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #logo .logo-end .logo-item a i {
   font-size: 27px;
   color: #333333;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
 }
 
 #logo .logo-end .logo-item a p {
@@ -334,8 +337,28 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   color: #333333;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#logo .logo-end .logo-cart a {
+  position: relative;
+}
+
+#logo .logo-end .logo-cart a::before {
+  position: absolute;
+  left: 15px;
+  top: -4px;
+  content: "2";
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #336699;
+  display: inline-block;
 }
 
 #logo .logo-end .logo-cart a:hover i {
@@ -349,8 +372,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
 #logo .logo-end .logo-cart a i {
   font-size: 27px;
   color: #333333;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
 }
 
 #logo .logo-end .logo-cart a p {
@@ -358,8 +381,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, ol {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   color: #333333;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
 }
 
 /*=============================
